@@ -11,64 +11,59 @@
 <H1>Pagina não permitida</H1>
 {{/if}}
 
-<div class="container">
-    <div class="editarPerfil">
-        <a href="#" onclick="editarPerfil()"><i class="material-symbols-outlined">Edit</i>EDITAR PERFIL</a>
+<div class="principal">
+    <div class="forms">
+        <div class="bc">
+            <form class="editperfil">
+                <h3>Edite seu Perfil</h3><br/>
 
+                <input type="text" name="cpf" class="" id="cpf" placeholder="Informe o CPF">
 
-    </div>
+                <button type="button" class="botao">Pesquisar</button>
 
-    <div class="criarProduto">
-        <a href="#" onclick=""><span class="material-symbols-outlined">add</span>ADICIONAR NOVO PRODUTO</a>
-        </span>
+                <div class="selectperm">
+                    <label for="permissaoAdm" class="texto">PERMISSÃO PARA ADM:</label>
+                    <select name="permissao" id="permissaoAdm">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
 
-    </div>
-</div>
+                <div class="selectfun">
+                    <label for="funcionario" class="texto">FUNCIONARIO:</label>
+                    <select name="funcionario" id="funcionario">
+                        <option value="sim">Sim</option><br>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+                <button class="botao">SALVAR</button>
+            </form>
+        </div>
 
-<div class="form-container">
-    <div class="formeditperfil">
-        <form id="editForm" class="form">
-            <input type="text" id="cpf" placeholder="Informe o CPF">
-            <button type="button" class="botao">Pesquisar</button>
+        <div class="bc">
+            <form class="addprodt">
+                <h3>Adicione um Produto</h3>
 
-            <div class="selectperm">
-                <label for="permissaoAdm" class="texto">PERMISSÃO PARA ADM:</label>
-                <select id="permissaoAdm">
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
+                <label for="" class="texto">INFORME O NOME DO PRODUTO:</label>
+                <input type="text" name="nome" id="produto">
 
-            </div>
+                <label for="" class="texto">INFORME O VALOR DO PRODUTO:</label>
+                <input type="text" name="preco" id="produto">
 
+                <label for="" class="texto">INFORME A QUANTIDADE:</label>
+                <input type="text" name="estoque" id="produto">
 
-            <div class="selectfun">
-                <label for="funcionario" class="texto">FUNCIONARIO:</label>
-                <select id="funcionario">
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
+                <label for="" class="texto">INFORME O CAMINHO DA IMAGEM:</label>
+                <input type="text" name="imagemProduto" id="produto">
 
-            </div>
+                <label for="Alcoolico" class="texto">Alcoolico:</label>
+                    <select name="Alcoolico" id="Alcoolico">
+                        <option value="sim">Sim</option><br>
+                        <option value="nao">Não</option>
+                    </select>
+                <button class="botao">SALVAR</button>
+            </form>
+        </div>
 
-            <button class="botao">SALVAR</button>
-        </form>
-    </div>
-
-
-    <div class="formcriarproduto">
-        <form id="formproduto" class="form">
-            <label for="" class="texto">INFORME A DESCRIÇÃO DO PRODUTO:</label>
-            <input type="text" id="produto">
-
-            <label for="" class="texto">INFORME O VALOR DO PRODUTO:</label>
-            <input type="text" id="produto">
-
-            <label for="" class="texto">INFORME A QUANTIDADE:</label>
-            <input type="text" id="produto">
-
-            <label for="" class="texto">INFORME O CAMINHO DA IMAGEM:</label>
-            <input type="text" id="produto">
-            <button class="botao">SALVAR</button>
-        </form>
     </div>
 </div>
