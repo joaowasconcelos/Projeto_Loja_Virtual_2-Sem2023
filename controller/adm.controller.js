@@ -19,8 +19,8 @@ const atualizarDadosCliente = (req,res) =>
 {
     const existClient = crud.read(filePath)
     if(existClient) {
-      const {cpf,email} = req.body
-      crud.validaCliente(cpf,email,permissao,funcionario)
+      const {cpf,permissao,funcionario} = req.body
+      crud.validaCliente(cpf,permissao,funcionario)
     }
 }
 

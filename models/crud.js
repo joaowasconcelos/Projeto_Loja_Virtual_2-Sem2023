@@ -56,9 +56,9 @@ const crud  = {
        return clientFounded
     },
 
-    modificaDados(cpf,email,permissao,funcionario) {
+    modificaDados(cpf,permissao,funcionario) {
       this.myData.forEach((el) => {
-        if (el.cpf == cpf && el.email == email) {
+        if (el.cpf == cpf) {
            el.permissao = permissao
            el.funcionario = funcionario
         }
