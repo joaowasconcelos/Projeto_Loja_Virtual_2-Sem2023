@@ -55,6 +55,16 @@ const crud  = {
         })
        return clientFounded
     },
+
+    modificaDados(cpf,email,permissao,funcionario) {
+      this.myData.forEach((el) => {
+        if (el.cpf == cpf && el.email == email) {
+           el.permissao = permissao
+           el.funcionario = funcionario
+        }
+      })
+    },
+
     clienteLogado(logado,dataClient) {
       if(logado) {
         fs.writeFileSync('./data/logado.JSON',JSON.stringify(dataClient),{encoding: 'utf-8'})

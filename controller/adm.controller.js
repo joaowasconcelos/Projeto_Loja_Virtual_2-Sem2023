@@ -19,7 +19,8 @@ const atualizarDadosCliente = (req,res) =>
 {
     const existClient = crud.read(filePath)
     if(existClient) {
-      
+      const {cpf,email} = req.body
+      crud.validaCliente(cpf,email,permissao,funcionario)
     }
 }
 
@@ -36,4 +37,4 @@ const criarProduto = (req,res) => {
 }
 
 
-module.exports = { adm }
+module.exports = { adm , criarProduto, atualizarDadosCliente}

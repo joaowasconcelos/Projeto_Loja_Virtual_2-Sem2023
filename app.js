@@ -35,6 +35,8 @@ app.use(express.static(`${__dirname}/publico`))
 
 app.get('/',homeController.home)
 app.get('/adm',admController.adm)
+app.post('/cadastraProduto', admController.criarProduto)
+app.post('/modificarPermissao', admController.atualizarDadosCliente)
 app.get('/alcoolica',alcoolicaController.alcoolica)
 app.get('/cadastro', cadastroController.cadastro)
 app.post ('/clientRegister', cadastroController.clientRegister)
