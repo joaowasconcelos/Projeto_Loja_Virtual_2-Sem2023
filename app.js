@@ -41,8 +41,9 @@ app.post ('/clientRegister', cadastroController.clientRegister)
 app.post ('/loginEnter',cadastroController.loginEnter)
 app.get('/carrinho',carrinhoController.carrinho)
 app.get('/carrinhoAdd/:id', carrinhoController.carrinhoAdd)
+app.get('/carrinhoClear', carrinhoController.carrinhoClear)
 app.get('/nao-alcoolicas', naoAlcoolicasController.naoAlcoolicas)
-
+app.get('/logout',cadastroController.loginLogout)
 app.use(function(req,res){
     res.status(404).sendFile(`${__dirname}/publico/html/erro.html`)
     

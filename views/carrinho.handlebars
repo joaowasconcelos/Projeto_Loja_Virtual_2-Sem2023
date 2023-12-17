@@ -6,21 +6,25 @@
 {{#if dataCart}}
 <section class="h-100 h-custom">
   <div class="container h-100 py-5">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col">
+    <div class="row d-flex justify-content-flex-end align-items-center h-100">
+      <div class="col offset-md-1 ">
         <div class="table-responsive">
           <table class="table">
             <thead>
               <tr>
                 <th scope="col" class="h5">Carrinho de Compras</th>
                 <th scope="col">Tipo</th>
-                <th scope="col">Quantidade</th>
                 <th scope="col">Preço</th>
-              </tr>
+                <th scope="col">
+                  <a href="/carrinhoClear" style="text-decoration:none;">
+                    <button style="background-color: green; font-size: medium; border: none; color: white; border-radius:10px; height:40px; marging-top:20px;text-transform:uppercase;">Limpar
+                      Tudo</button>
+                  </a>
+                </th>
             </thead>
             <tbody>
               {{#each dataCart.items}}
-                <tr>
+              <tr>
                 <th scope="row">
                   <div class="d-flex align-items-center">
                     <img src="{{imagemProduto}}" class="img-fluid rounded-3" style="width: 120px;" alt="Book">
@@ -31,20 +35,20 @@
                 </th>
                 <td class="align-middle">
                   <p class="mb-0" style="font-weight: 500;">{{#if Alcoolico}}Alcoolico {{else}}Não Alcoolico{{/if}}</p>
-                </td>       
+                </td>
                 <td class="align-middle">
                   <p class="mb-0" style="font-weight: 500;">R${{preco}}</p>
                 </td>
               </tr>
               <tr>
-              {{/each}}
-            
+                {{/each}}
+
             </tbody>
           </table>
         </div>
 
         <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
-          <div class="card-body p-4">
+          <div class="card-body p-4" style="background-color: rgb(0, 145, 255);">
 
             <div class="row">
               <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
@@ -139,7 +143,6 @@
 
               </div>
             </div>
-
           </div>
         </div>
 
@@ -150,6 +153,8 @@
 {{/if}}
 {{else}}
 <div style="display:flex;align-items:center;width:100%;height:100vh; border:1px solid">
-  <a href="/cadastro"><h1>Cadastre-se para ter acesso ao carrinho</h1></a>
+  <a href="/cadastro">
+    <h1>Cadastre-se para ter acesso ao carrinho</h1>
+  </a>
 </div>
 {{/if}}
