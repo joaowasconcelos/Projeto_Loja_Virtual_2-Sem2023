@@ -1,15 +1,8 @@
 <aside class="manu-lateral">
 
-    <a href="/alcoolica">Alcolicas</a>
-    <a href="/nao-alcoolicas">Nao alcolicas</a>
-    {{#if dataClient.permissao}}
-    <a href="/adm">ADM</a>
-    {{/if}}
 
     <nav class="manu-lateral">
         <ul>
-
-
 
             <li class="item-menu">
                 <a href="/">
@@ -40,14 +33,14 @@
                 </a>
             </li>
             {{/if}}
+            {{#if dataClient}}
             <li class="item-menu">
                 <a href="/logout">
                     <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
                 </a>
             </li>
+            {{/if}}
         </ul>
     </nav>
 
 </aside>
-
-<script src="js/alcoolica1.js"></script>
