@@ -7,6 +7,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
+}
+
+.item {
     margin-left: 190px;
   }
   
@@ -21,35 +24,32 @@ body {
     text-align: center;
     transition: 100ms;
     border: 1px solid white;
-  
   }
   
-
-.item:hover {
-    transform: scale(1.1);
-}
-
-.item img {
-    padding-left: 20%;
+    .item:hover{
+      transform: scale(1.1);
+    }
+  
+  .item img {
+    padding-left: 20% ;
     width: 80%;
     height: 80%;
     color: white;
-}
-
-.item h3 {
-
+  }
+  .item h3{
     font-size: 1em;
     width: 100%;
     height: 100%;
     color: white;
-}
+  }
 
 .item h2 {
     font-size: 1em;
     width: 100%;
     height: 100%;
     color: white;
-}
+  }
+
 
 .item input {
     width: 100%;
@@ -59,8 +59,10 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     border: 1px solid blue;
-}
+  }
+
 
 a{
     text-decoration: none;
   }
+
