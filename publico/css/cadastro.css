@@ -25,7 +25,7 @@ body{
     width: 768px;
     max-width: 100%;
     min-height: 480px;
-    margin-top: 150px;
+    margin-top: 10px;
 }
 
 .container p{
@@ -231,4 +231,3 @@ body{
     text-align: center;
     padding-top: 21.5px;
 }
-
